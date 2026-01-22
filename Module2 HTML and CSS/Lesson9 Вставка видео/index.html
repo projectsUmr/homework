@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вставка видео</title>
+  </head>
+  <body>
+    <video
+      src="video-one.MP4"
+      width="300"
+      controls
+      loop
+      muted
+      poster="image-jpg.jpg"
+    ></video>
+  </body>
+</html>
+<!-- Для вставки видео мы используем тег video, чтобы были элементы управления нам нужно добавить атрибут controls
+                                                чтобы видео повторялось раз за разом добавляем атрибут loop
+                                                чтобы видео запускалось БЕЗ звука то добавляем атрибут muted
+                                                чтобы видео запускалось автоматически то добавляем атрибут autoplay 
+                                                чтобы видео имело постер (обложку), добавляем атрибут poster
+        Некоторые браузеры блокируют autoplay если нет атрибута muted, есть такая политика, т.е. добавив muted заработает autoplay, а в safari может и вовсе не работать -->
+
+<!-- Есть еще тег audio. работа с ним точно такая же как и с video -->
