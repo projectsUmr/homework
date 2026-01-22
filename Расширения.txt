@@ -1,0 +1,8 @@
+1. Russian Language Pack for Visual Studio Code  (справа снизу появится окно changed language and restart).
+2. Catppuccin for VSCode (и там выбираем mocha, весь курс с ней) или Atom One Dark Theme (она была в модуле1 на 1 уроке).
+3. Material Icon Theme (иконки файлов).
+4. Настройки -> В поиске пишем Sticky -> Editor > Sticky Scroll: Scroll With Editor СНЯТЬ ГАЛКУ. И еще Sticky Scroll Enabled снять галку(чтобы код не прилипал к шапке страницы)
+5. Настройки -> В поиске пишем word wrap -> Editor: Word Wrap -> ставим on (чтобы текст переносился)
+6. Prettier - Code formatter (чтобы код смотрелся канонично.) -> Далее идем в настройки -> Пишем в поиске default formatter -> В Editor: Default Formatter выбираем Prettier - Code formatter из списка. + в настройках, в поиске прописать format on save и поставить галку.
+7. auto rename tag
+8. image preview - это миниатюры фоток в коде
