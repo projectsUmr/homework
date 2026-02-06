@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-spacing: 0px; /* border-spacing отвечает за отступы мекжду ячейками */
+  border-collapse: collapse; /* чтобы склеить бордеры когда мы убираем между ними отступы*/
+  font-family: sans-serif;
+}
+
+tbody,
+thead {
+  font-size: 13px;
+}
+
+.weekends {
+  color: brown;
+}
+
+td,
+th,
+caption {
+  border: 1px solid #000;
+}
+
+caption {
+  border-bottom: none; /* Уберем обводку ячейки снизу */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+td,
+th {
+  padding: 0 4px 0;
+  font-weight: 600;
+}
