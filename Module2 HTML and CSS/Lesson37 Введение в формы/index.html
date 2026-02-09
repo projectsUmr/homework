@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Введение в формы</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Введи ФИО троих пидорасов</legend>
+        <label>
+          Имя
+          <input id="firstName" type="text" />
+        </label>
+        <label>
+          Фамилия
+          <input id="lastName" type="text" />
+        </label>
+        <label>
+          Отчество
+          <input id="secondName" type="text" />
+        </label>
+        <button type="submit">Отправить форму</button>
+        <button type="reset">Очистить форму</button>
+        <button type="menu">menu</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!--  <form> - тег для создания  форм 
+    
+    атрибут action нужен не всегда, служит он для того чтобы указать путь, по которому мы будем отправлять форму. например до файла бекэнда где будет выполняться какой то код, например отправки на почту
+    
+    action мы пока будем убирать. Да и в современной разработке он не так часто используется.
+    
+    <input> - одиночный тег для создания поля ввода. По умолчанию имеет type="text".
+
+    <fieldset> - тег используется для группировки инпутов по какому то смыслу. (он же задает общую обводку)
+
+    <legend> - тег для установки заголовка для группы инпутов.
+    <label> - тег для установки названия над инпутом. Чтобы привязать лэйбл к инпуту надо инпут обернуть в label. Например <label>Имя <input type="text" /></label>
+
+    2ой способ привязать label к нашему input. Например
+                                <label for="firstName">Имя</label>
+                                <input id="firstName" type="text" />
+
+      <label> должен быть всегда, но если он не нужен то скрыть его.                          
+    Обычно проще просто обернуть в label чем писать id в for.
+
+    <button> - тег кнопки. Кнопки используются не только для отправки формы. Также по кнопке мы можем открыть какое то окошко, показать еще, итд.
+        данный тег имеет атрибуты:
+        Просто кнопка это type="button". 
+        Чтобы отправить форму используется type="submit". (по умолчанию)
+        Чтобы очистить форму используется type="reset". 
+        type="menu" - обычно никогда не нужен
+    -->

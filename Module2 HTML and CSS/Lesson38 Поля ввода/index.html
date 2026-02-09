@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поля ввода</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Введи ФИО троих пидорасов</legend>
+        <label>
+          Имя
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            placeholder="Введите имя"
+            value="Артур"
+            name=""
+            required
+          />
+        </label>
+        <label>
+          Фамилия
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            value="Дрочкин"
+            placeholder="Введите фамилию"
+            required
+          />
+        </label>
+        <label>
+          Возраст
+          <input
+            id="age"
+            name="age"
+            type="number"
+            inputmode="numeric"
+            placeholder="Введите возраст"
+            required
+          />
+        </label>
+        <label>
+          Номер телефона
+          <input
+            id="number"
+            name="tel"
+            type="tel"
+            placeholder="Введите номер"
+            inputmode="tel"
+            required
+          />
+        </label>
+        <label>
+          Почта
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Введите почту"
+            inputmode="email"
+            required
+          />
+        </label>
+        <label>
+          Дата рождения
+          <input id="birthday" name="birthday" type="date" required />
+        </label>
+        <label>
+          СНИЛС
+          <input id="file" name="file" type="file" multiple required />
+        </label>
+        <label>
+          Цвет профиля
+          <input id="col" name="color" type="color" required />
+        </label>
+        <label>
+          Пароль
+          <input id="pass" name="pass" type="password" required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительная информация</legend>
+        <label>
+          Номенклатура
+          <textarea required name="msg"></textarea>
+        </label>
+      </fieldset>
+    </form>
+    <button type="submit">Отправить форму</button>
+    <button type="reset">Очистить форму</button>
+  </body>
+</html>
+
+<!-- <input> - одиночный тег для создания поля ввода. По умолчанию имеет type="text".
+  type="text" это стандартное значение атрибута.
+  Но еще есть:
+  ---type="button" - и теперь это стало кнопкой, и при помощи другого атрибута можно добавить на нее текст.
+  
+  ---type="tel" - позволяет вводить номер телефона. В обычный text мы тоже можем его ввести. Казалось бы разницы нет, но браузер то все понимает, и на телефонах будет открываться клавиатура с цифрами, хотя это можно проконтроллировать с помощью атрибута inputmode="tel"
+
+   ---type="email" - позволяет вводить почту. а также будет открываться клавиатура где есть знак @.
+
+   ---type="number" - позволяет нам вводить числа, есть кнопки чтобы листать числа, например возраст.
+
+   ---type="date" - позволяет вводить дату. Обычно календарь лучше исп-вать какой нибудь написаный на JS, т.к. этот ебет мозги в некоторых браузерах, есть такая практика.
+
+   ---type="file" позволяет прикладывать файл по кнопке.(атрибут multiple позволяет выбирать сразу несколько файлов)
+
+   ---type="color" - позволяет выбрать цвет.
+
+   ---type="password" - для паролей.
+
+   Атрибут required означает что поле ВСЕГДА доолжно быть заполнено.Но в целом все эти проверки делаются через JS.
+
+   Атрибут placeholder позволяет указать дополнительную информацию.
+
+   Атрибут value вставляет какое то написаное нами значение заранее.
+
+   Атрибут name - здесь мы прописывает техническое значение данного input, это нужно когда мы  например отправляем форму на сервер, почту, в общем чтобы мы могли понять что это вообще за input
+   
+    -->

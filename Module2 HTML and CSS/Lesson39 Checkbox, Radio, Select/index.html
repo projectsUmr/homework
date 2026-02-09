@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox, Radio, Select</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <form>
+      <label class="lb"
+        >ТОП100 <input type="checkbox" name="top1000" value="top1000" checked
+      /></label>
+      <label class="lb"
+        >Сводно <input type="checkbox" name="svodno" value="svodno"
+      /></label>
+      <label class="lb"
+        >Склады <input type="checkbox" name="store" value="store"
+      /></label>
+      <button>send</button>
+    </form>
+
+    <form>
+      <h2>Выбери язык программирования:</h2>
+      <label class="lb"
+        ><input type="radio" name="test" value="html" checked />HTML</label
+      >
+      <label class="lb"
+        ><input type="radio" name="test" value="css" />CSS</label
+      >
+      <label class="lb"
+        ><input type="radio" name="test" value="js" />JavaScript</label
+      >
+      <button>send</button>
+    </form>
+
+    <form>
+      <label>
+        Выбери город
+        <select name="city" required>
+          <option value="" disabled selected>Не выбрано</option>
+          <option value="moscow" disabled>Москва</option>
+          <option value="spb">Санкт-Петербург</option>
+          <option value="ekb">Екатеринбург</option>
+        </select>
+      </label>
+      <button>send</button>
+    </form>
+  </body>
+</html>
+
+<!-- 
+  type="checkbox" - добавляет флажок, но можно застилизовать по разному, но называется всегда checkbox. Обязательно должен быть атрибут value, иначе никакие значения не передадутся!!!!!!!!!!!!!!!!!!!!!!!
+
+  type="radio" - добавляет кружки, радиокнопки позволяет выбрать лишь один input, и чтобы можно  было снять значение надо указать одинаковый name для радио.
+
+  В form можем использовать <p> и h1/h2/h3 итд, не обязательно только legend.В общем от степени вложенности элементов.
+
+  Атрибут checked позволяет для type="radio" и "checkbox" установить default выбор.
+  Но в checkbox можно ставить checked в каждом, а в radio только одному из всех.
+    
+
+  В ридере считывают контент названия из label, поэтому логичнее вынести заголовок в label.
+
+  Чтобы задать значения в select мы будем использовать тег <option> и допом будем дублировать в свойство value это же значение но на англ.яз.Это нужно для отправки формы в url. Также можно установить required.
+
+    Также для всех них есть атрибут disabled, он позволяет делать выбор значения НЕАКТИВНЫМ. 
+
+    Также для option есть атрибут selected, он позволяет делать выбор значения ПО УМОЛЧАНИЮ.
+    -->

@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  /* display: block; */
+}
+.form {
+  border: 1px solid #333; /* Обводка формы */
+  border-radius: 6px; /* Скругление углов */
+  max-width: 300px; /* Ограничение по ширине */
+  padding: 15px; /* Отступы внутренние*/
+}
+
+.form-group {
+  border: none; /* убираем контукр у fieldset*/
+  padding: 0; /* Отступы внутренние*/
+}
+
+.form-group-title {
+  font-weight: 700; /* жирность шрифта */
+  padding: 0; /* Отступы внутренние*/
+  margin-bottom: 10px; /* отступ снизу, пространство между заголовком и input */
+}
+
+.label {
+  display: block; /* превращаем в блочный элемент */
+  margin-bottom: 5px; /* отступ снизу */
+}
+
+.textarea {
+  max-height: 150px; /*  максимальная высота */
+  min-height: 30px; /* минимальная высота */
+  resize: vertical; /* можно увеличивать поле только вертикально  */
+}
+
+.input,
+.textarea {
+  border: 1px solid #333; /* Обводка input */
+  border-radius: 6px; /* Скругление углов input*/
+  min-width: 220px; /* Минимальная ширина */
+  padding: 5px 12px; /* Отступы внутренние*/
+  margin-bottom: 10px; /* отступ снизу */
+  outline: none; /* убираем выделение инпута при наведении мышкой */
+}
+
+.checkbox {
+  cursor: pointer; /* изменение курсора при наведении */
+}
+
+.checkbox-text {
+  font-size: 14px; /* Размер шрифта */
+}
+
+.button {
+  border: none; /* убираем обводку кнопки */
+  border-radius: 6px; /* Скругление углов кнопки*/
+  padding: 5px 15px; /* Отступы внутренние*/
+  cursor: pointer; /* изменение курсора при наведении */
+}
+
+/*  Паддинги если нужны  то пишем после min-width, это стиль */

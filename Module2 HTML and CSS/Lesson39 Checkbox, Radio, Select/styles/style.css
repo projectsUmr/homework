@@ -1,0 +1,7 @@
+.lb {
+  display: block;
+}
+
+/* 
+  по умолчанию стоит display: inline-block; но мы хотим чтобы checkbox шли вниз, потому ставим  display: block;
+*/
